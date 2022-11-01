@@ -1,5 +1,10 @@
+"""
+SOLUTION LINK: https://www.codingame.com/training/easy/power-of-thor-episode-1/solution?id=27005354
+"""
+
 import sys
 import math
+
 
 # Auto-generated code below aims at helping you parse
 # the standard input according to the problem statement.
