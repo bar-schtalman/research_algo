@@ -56,5 +56,5 @@ while True:
         POS_Y += 1
         POS_X -= 1
 
-    # A single line providing the move to be made: N NE E SE S SW W or NW
+    ## A single line providing the move to be made: N NE E SE S SW W or NW
     print(turn)
