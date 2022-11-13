@@ -5,8 +5,10 @@ abc.def@mail.com
 .abc@mail.com 
 abc@mail.com
 fgs
-vcvv
+vc
 34ef
+bar
+bsdsar
 abc#def@mail.com 
 abc_def@mail.com
 abc.def@mail.c 
@@ -15,5 +17,6 @@ abc.def@mail#archive.com
 abc.def@mail-archive.com
 abc.def@mail
 abc.def@mail.org
-abc.def@mail..com 	
+abc.def@mail..com
+bbba
 abc.def@mail.com
