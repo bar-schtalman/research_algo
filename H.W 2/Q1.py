@@ -1,7 +1,7 @@
 import re
 filename = "C:\\Users\\schta\\PycharmProjects\\research_hw1\\H.W 2\\text.txt"
 
-
+lst1 = [1,4,6,3,5,7]
 def valid_email(filename):
     regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
     valids = []
