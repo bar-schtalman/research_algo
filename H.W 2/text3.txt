@@ -1,8 +1,0 @@
-abc-@mail.com
-abc..def@mail.com
-.abc@mail.com
-abc#def@mail.com
-abc-d@mail.com
-abc.def@mail.com
-abc@mail.com
-abc_def@mail.com

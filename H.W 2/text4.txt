@@ -1,8 +1,0 @@
-abc.def@mail.c
-abc.def@mail#archive.com
-abc.def@mail
-abc.def@mail..com
-abc.def@mail.cc
-abc.def@mail-archive.com
-abc.def@mail.org
-abc.def@mail.com

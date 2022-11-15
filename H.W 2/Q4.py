@@ -1,7 +1,9 @@
 import sys
 import math
-from collections import deque
-from queue import Queue
+"""
+This is the URL for my answer in codingame
+https://www.codingame.com/training/medium/winamax-battle/solution?id=27213225
+"""
 p1lst = []
 p2lst = []
 def whatNum(num : str):
