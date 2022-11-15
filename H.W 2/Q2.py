@@ -83,21 +83,4 @@ if __name__ == '__main__':
     import doctest
 
     doctest.testmod()
-    """
-f(3)
-f(3)
-f(4)
-f1(3)
-f1(5)
-f1(5)
-f2("abc ")
-f2("abc ")
-f(2)
-f(2)
-f(10)
-f(2)
-f(10)
-  """
 
-# @lastcall
-# def param_function(param):
