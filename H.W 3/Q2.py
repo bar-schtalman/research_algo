@@ -27,6 +27,15 @@ def find(algorithm: Callable, items: Any):
 
 
 def first(item_vals: list, valueof: Callable[[Any], float] = lambda x: x):
+    """
+    this method compute and return first two different max number in list
+    >>> first([8,7,4,15,19,2,4,5,16,19])
+    (19, 16)
+    >>> first([11,12,12,12,12,12])
+    (12, 11)
+    >>> first([442.5,443.33,443.36,444])
+    (444, 443.36)
+    """
     size = len(item_vals)
     sec = -1
     first = -1
@@ -39,18 +48,30 @@ def first(item_vals: list, valueof: Callable[[Any], float] = lambda x: x):
 
 
 def first_sum(item_vals: list, valueof: Callable[[Any], float] = lambda x: x):
-    size = len(item_vals)
-    sec = -1
-    first = -1
-    for i in range(size):
-        first = max(first,item_vals[i])
-    for i in range(size):
-        if(item_vals[i] != first):
-            sec = max(sec,item_vals[i])
-    return first+sec
+    """
+    this method compute and return sum of first two different max number in list
+    >>> first_sum([8,7,4,15,19,2,4,5,16,19])
+    35
+    >>> first_sum([11,12,12,12,12,12])
+    23
+    >>> first_sum([442.5,443.33,443.36,444])
+    887.36
+
+    """
+    a,b = first(item_vals, valueof)
+    return a+b
 
 
 def second(item_vals: list, valueof: Callable[[Any], float] = lambda x: x):
+    """
+    this method compute and return first two different max number in list
+    >>> second([8,7,4,15,19,2,4,5,16,19])
+    (19, 16)
+    >>> second([11,12,12,12,12,12])
+    (12, 11)
+    >>> second([442.5,443.33,443.36,444])
+    (444, 443.36)
+    """
     first = -1
     sec = "no second number"
     for i in range(len(item_vals)):
@@ -63,15 +84,17 @@ def second(item_vals: list, valueof: Callable[[Any], float] = lambda x: x):
 
 
 def second_sum(item_names: list, valueof: Callable[[Any], float] = lambda x: x):
-    first = -1
-    sec = "no second number"
-    for i in range(len(item_names)):
-        if (item_names[i] > first):
-            sec = first
-            first = item_names[i]
-        elif (item_names[i] > sec and item_names[i] != first):
-            sec = item_names[i]
-    return first+sec
+    """
+    this method compute and return sum of first two different max number in list
+    >>> second_sum([8,7,4,15,19,2,4,5,16,19])
+    35
+    >>> second_sum([11,12,12,12,12,12])
+    23
+    >>> second_sum([442.5,443.33,443.36,444])
+    887.36
+    """
+    a,b = second(item_names,valueof)
+    return a+b
 
 
 if __name__ == "__main__":
