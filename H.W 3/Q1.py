@@ -1,5 +1,4 @@
 import itertools
-import time
 
 
 def bounded_subsets(set:list,num):
@@ -23,12 +22,12 @@ def bounded_subsets(set:list,num):
     yield []
     size = len(set)
     for i in range(1,size):
-        for combo in (itertools.combinations(set, i)):
+        for combo in (itertools.combinations(set,i)):
             combo_sum = sum(combo)
-            if combo_sum > num:
-                break
-            else:
+            if combo_sum <= num:
                 yield list(combo)
+            else:
+                break
 
 
 if __name__ == "__main__":
